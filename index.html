@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SofIA Labs | IA para Marketing, Ventas y CRM</title>
+  <meta name="description" content="SofIA Labs: servicios de Inteligencia Artificial aplicados al marketing digital, los procesos de venta y la implementación de CRM." />
+  <meta property="og:title" content="SofIA Labs | Innovation & Knowledge Solutions" />
+  <meta property="og:description" content="Inteligencia Artificial aplicada al marketing digital, los procesos de venta y la implementación de CRM." />
+  <meta property="og:image" content="logo-sofialabs.png" />
+  <meta name="theme-color" content="#131c4f" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Logo animado del hero: bordes difuminados para fundirse con el fondo */
+    .hero__video {
+      width: min(760px, 100%); height: auto; aspect-ratio: 1200 / 482; object-fit: cover;
+      --fade-x: linear-gradient(to right, transparent 0, #000 10%, #000 90%, transparent 100%);
+      --fade-y: linear-gradient(to bottom, transparent 0, #000 16%, #000 84%, transparent 100%);
+      -webkit-mask-image: var(--fade-x), var(--fade-y); -webkit-mask-composite: source-in;
+              mask-image: var(--fade-x), var(--fade-y); mask-composite: intersect;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__brand" aria-label="SofIA Labs, inicio">
+        <img src="logo-sl.png" alt="" width="40" height="40" />
+        <span>sof<b>IA</b>labs</span>
+      </a>
+      <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#objetivo">Objetivo</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#metodo">Cómo trabajamos</a>
+        <a href="#contacto" class="btn btn--sm">Conversemos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <video class="hero__logo hero__video reveal" autoplay muted loop playsinline preload="auto" poster="logo-hero-poster.jpg" width="1200" height="482" aria-label="SofIA Labs — Innovation &amp; Knowledge Solutions">
+          <source src="logo-hero.webm" type="video/webm" />
+          <source src="logo-hero.mp4" type="video/mp4" />
+          <img src="logo-sofialabs.png" alt="SofIA Labs — Innovation &amp; Knowledge Solutions" width="1400" height="453" />
+        </video>
+        <h1 class="reveal">Inteligencia Artificial que <span class="grad">vende, atiende y hace crecer</span> tu negocio.</h1>
+        <p class="hero__lead reveal">Aplicamos IA al marketing digital, a los procesos de venta y a la implementación de CRM para que tu equipo trabaje con datos, automatice lo repetitivo y dedique su tiempo a cerrar negocios.</p>
+        <div class="hero__cta reveal">
+          <a href="#contacto" class="btn">Agenda un diagnóstico</a>
+          <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+        </div>
+        <ul class="hero__tags reveal" aria-label="Áreas de trabajo">
+          <li>Marketing digital</li>
+          <li>Procesos de venta</li>
+          <li>Implementación de CRM</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ OBJETIVO ============ -->
+    <section class="section" id="objetivo">
+      <div class="container objetivo">
+        <div class="objetivo__text reveal">
+          <p class="eyebrow">Nuestro objetivo</p>
+          <h2>Llevar la IA del discurso a los resultados comerciales.</h2>
+          <p>En SofIA Labs ayudamos a empresas a integrar la Inteligencia Artificial en el corazón de su operación comercial: desde la primera interacción con un potencial cliente hasta el seguimiento postventa.</p>
+          <p>Diseñamos soluciones prácticas, medibles y a la medida de cada equipo, combinando conocimiento del negocio con tecnología de vanguardia.</p>
+        </div>
+        <div class="objetivo__pillars">
+          <article class="pillar reveal">
+            <span class="pillar__n">01</span>
+            <h3>Innovación aplicada</h3>
+            <p>Usamos IA donde genera impacto real, no como adorno tecnológico.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar__n">02</span>
+            <h3>Conocimiento que se queda</h3>
+            <p>Capacitamos a tu equipo para que adopte y aproveche cada herramienta.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar__n">03</span>
+            <h3>Resultados medibles</h3>
+            <p>Definimos indicadores desde el inicio y reportamos avances con datos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section section--dark" id="servicios">
+      <div class="circuit" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow eyebrow--light">Servicios</p>
+          <h2>Tres frentes, un mismo propósito: vender más y mejor.</h2>
+        </div>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l14-6v14L3 13z"/><path d="M7 13v5a2 2 0 0 0 4 0v-3.5"/><path d="M20 9.5v5"/></svg>
+            </div>
+            <h3>IA para Marketing Digital</h3>
+            <p>Campañas más inteligentes, contenido a escala y audiencias mejor segmentadas.</p>
+            <ul>
+              <li>Generación de contenido y copies asistidos por IA</li>
+              <li>Segmentación y personalización de audiencias</li>
+              <li>Optimización de campañas y presupuesto publicitario</li>
+              <li>Análisis predictivo y reportes automatizados</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/><path d="M15 7h5v5"/></svg>
+            </div>
+            <h3>IA en Procesos de Venta</h3>
+            <p>Un embudo comercial que califica, prioriza y hace seguimiento por ti.</p>
+            <ul>
+              <li>Calificación y scoring de leads con IA</li>
+              <li>Asistentes y chatbots de ventas 24/7</li>
+              <li>Automatización de seguimiento y cotizaciones</li>
+              <li>Pronóstico de ventas y análisis del pipeline</li>
+            </ul>
+          </article>
+
+          <article class="service reveal">
+            <div class="service__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg>
+            </div>
+            <h3>Implementación de CRM</h3>
+            <p>Tu información de clientes ordenada, conectada y potenciada con IA.</p>
+            <ul>
+              <li>Selección, configuración y puesta en marcha del CRM</li>
+              <li>Migración y limpieza de datos</li>
+              <li>Integración con marketing, WhatsApp, correo y web</li>
+              <li>Capacitación del equipo y soporte continuo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÉTODO ============ -->
+    <section class="section" id="metodo">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="eyebrow">Cómo trabajamos</p>
+          <h2>Un método claro, de la idea a la operación.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__dot"></span>
+            <h3>Diagnóstico</h3>
+            <p>Entendemos tu proceso comercial, tus herramientas y dónde se pierden oportunidades.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot"></span>
+            <h3>Diseño</h3>
+            <p>Proponemos una hoja de ruta con soluciones de IA priorizadas por impacto.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot"></span>
+            <h3>Implementación</h3>
+            <p>Configuramos, integramos y probamos junto a tu equipo, sin frenar la operación.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__dot"></span>
+            <h3>Medición y mejora</h3>
+            <p>Seguimos los indicadores acordados y optimizamos de forma continua.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ BENEFICIOS ============ -->
+    <section class="section section--soft">
+      <div class="container benefits">
+        <div class="benefit reveal"><strong>Más leads calificados</strong><span>La IA identifica a quién llamar primero.</span></div>
+        <div class="benefit reveal"><strong>Menos tareas manuales</strong><span>Automatizamos seguimiento, registro y reportes.</span></div>
+        <div class="benefit reveal"><strong>Clientes mejor atendidos</strong><span>Respuestas rápidas y personalizadas en cada canal.</span></div>
+        <div class="benefit reveal"><strong>Decisiones con datos</strong><span>Un CRM ordenado y paneles que se actualizan solos.</span></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="section section--dark" id="contacto">
+      <div class="circuit" aria-hidden="true"></div>
+      <div class="container contact">
+        <div class="contact__text reveal">
+          <p class="eyebrow eyebrow--light">Contacto</p>
+          <h2>¿Listo para llevar la IA a tu área comercial?</h2>
+          <p>Cuéntanos en qué etapa está tu empresa y te proponemos un primer diagnóstico sin costo.</p>
+        </div>
+        <form class="contact__form reveal" id="contactForm">
+          <label>Nombre<input type="text" name="nombre" required autocomplete="name" /></label>
+          <label>Empresa<input type="text" name="empresa" autocomplete="organization" /></label>
+          <label>Correo<input type="email" name="correo" required autocomplete="email" /></label>
+          <label>¿Qué te interesa?
+            <select name="interes">
+              <option>IA para Marketing Digital</option>
+              <option>IA en Procesos de Venta</option>
+              <option>Implementación de CRM</option>
+              <option>Todo lo anterior</option>
+            </select>
+          </label>
+          <label class="full">Mensaje<textarea name="mensaje" rows="4"></textarea></label>
+          <button type="submit" class="btn full">Enviar mensaje</button>
+          <p class="form__note full" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="nav__brand"><img src="logo-sl.png" alt="" width="32" height="32" /><span>sof<b>IA</b>labs</span></a>
+      <p>Innovation &amp; Knowledge Solutions</p>
+      <p class="footer__copy">© <span id="year"></span> SofIA Labs. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
